@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4WN-gv-Ukf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="562"/>
+                                <connections>
+                                    <segue destination="8Z0-21-wTe" kind="embed" identifier="embedFaceTrackerViewController" id="91t-0T-LNy"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-BN-Lno">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="k1h-tj-Fr2"/>
+                                </constraints>
+                                <state key="normal" title="Options"/>
+                                <connections>
+                                    <action selector="optionsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A0L-ah-Py9"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="u2c-sA-lHZ">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTK-y4-UhN">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="fixedSpace" id="gmR-wu-B77"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ALI-Ge-BlV"/>
+                                    <barButtonItem title="Pirate" id="uOb-Pn-xSH">
+                                        <connections>
+                                            <action selector="showPirate:" destination="BYZ-38-t0r" id="Ocl-zu-jIE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="XXh-iM-a4g"/>
+                                    <barButtonItem title="Heisenberg" id="GaL-qX-fdI">
+                                        <connections>
+                                            <action selector="showWW:" destination="BYZ-38-t0r" id="067-UK-EIi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="IHR-4H-zU6"/>
+                                    <barButtonItem title="Clown" id="OOV-lO-1XV">
+                                        <connections>
+                                            <action selector="showClown:" destination="BYZ-38-t0r" id="LFT-UQ-5un"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PK3-9w-Myd"/>
+                                    <barButtonItem title="Party" id="trw-sW-Hqc">
+                                        <connections>
+                                            <action selector="showParty:" destination="BYZ-38-t0r" id="D5w-8H-ooU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KfH-bH-ghR"/>
+                                    <barButtonItem systemItem="fixedSpace" id="SX4-9X-kYp"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4WN-gv-Ukf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0li-PM-39R"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4WN-gv-Ukf" secondAttribute="bottom" constant="6" id="56B-DM-KHk"/>
+                            <constraint firstItem="DT3-BN-Lno" firstAttribute="leading" secondItem="4WN-gv-Ukf" secondAttribute="leading" id="Ue2-Go-ZpL"/>
+                            <constraint firstItem="DT3-BN-Lno" firstAttribute="trailing" secondItem="4WN-gv-Ukf" secondAttribute="trailing" id="W1k-Ct-2J4"/>
+                            <constraint firstItem="DT3-BN-Lno" firstAttribute="top" secondItem="4WN-gv-Ukf" secondAttribute="top" id="aNX-u1-JzB"/>
+                            <constraint firstAttribute="trailing" secondItem="4WN-gv-Ukf" secondAttribute="trailing" id="fB7-1p-5D2"/>
+                            <constraint firstItem="4WN-gv-Ukf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kvX-C5-7Ar"/>
+                            <constraint firstItem="4WN-gv-Ukf" firstAttribute="centerX" secondItem="u2c-sA-lHZ" secondAttribute="centerX" id="lBM-Qy-DUd"/>
+                            <constraint firstItem="u2c-sA-lHZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xlC-5i-9xn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="u2c-sA-lHZ" id="XEv-pU-hmz"/>
+                        <outlet property="bottomToolbar" destination="eTK-y4-UhN" id="var-2K-ivj"/>
+                        <outlet property="clownButton" destination="OOV-lO-1XV" id="zbX-6c-aXu"/>
+                        <outlet property="faceTrackerContainerView" destination="4WN-gv-Ukf" id="cU8-tV-Dqp"/>
+                        <outlet property="optionsButton" destination="DT3-BN-Lno" id="utG-iP-HcM"/>
+                        <outlet property="partyButton" destination="trw-sW-Hqc" id="KRJ-1x-TTv"/>
+                        <outlet property="pirateButton" destination="uOb-Pn-xSH" id="VTw-ro-13i"/>
+                        <outlet property="wwButton" destination="GaL-qX-fdI" id="oyP-ID-2aE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="126.7605633802817"/>
+        </scene>
+        <!--Face Tracker View Controller-->
+        <scene sceneID="tMQ-vQ-PVF">
+            <objects>
+                <viewController id="8Z0-21-wTe" customClass="FaceTrackerViewController" customModule="FaceTracker" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GEZ-a9-DmX"/>
+                        <viewControllerLayoutGuide type="bottom" id="q51-mN-gqp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7eX-xu-k1f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="562"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4S-Y2-CdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="1199"/>
+        </scene>
+    </scenes>
+</document>
