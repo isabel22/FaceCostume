@@ -5,6 +5,6 @@ It has FaceTracker.framework which was provided by the course with all the right
 
 Costumes:
 - Pirate: Adds a pirate hat, pirate eye patch and a piercing over your nose.
-- Heisenbert: Adds a black hat, sunglasses and mustache.
+- Heisenberg: Adds a black hat, sunglasses and moustache.
 - Clown: Adds over your face a red clown wig, a clown nose and over your eyes two rotating stars.
 - Party: Adds over your head a party hat and some balloons that appear and disappear.
